@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f5SAVxVPzuAzhYL0xO4rLg7Me7HOY4pRHcNX3q/asgcF9ftxIuT/rcltT8a+MI6NkCq0/oZcarpAvcXIi/+ucg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\James\\Documents\\GitHub\\Paint-Calculator\\Source\\Paint-Calculator\\Paint-Calculator\\Paint-Calculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\James\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
