@@ -1,9 +1,59 @@
-﻿@page "/"
+﻿<!-- Index.razor -->
+<!-- The home page of the site -->
 
-<PageTitle>Index</PageTitle>
+<!-- Set the location of this page to be / -->
+@page "/"
 
-<h1>Hello, world!</h1>
+<!-- Use the Paint_Calculator.Data classes we have created -->
+@using Paint_Calculator.Data
 
-Welcome to your new app.
+<!-- Inject the Processesing Service we have created -->
+@inject FormProcessesingService ProcessesingService
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<!-- Setting the page title -->
+<PageTitle>Paint Calculator</PageTitle>
+
+<!-- HTML Page Design -->
+<h1>Paint Calculator</h1>
+
+<h2>Your Info</h2>
+
+<!-- The edit form, where the user can enter the dimensions and surface type -->
+<EditForm Model="@PaintCalculator" OnSubmit="@HandleSubmit">
+    <InputNumber id="width" @bind-Value="PaintCalculator.Width" />
+    <InputNumber id="length" @bind-Value="PaintCalculator.Length" />
+    <InputNumber id="height" @bind-Value="PaintCalculator.Height" />
+
+    <InputSelect id="surfacetype" @bind-Value="PaintCalculator.SurfaceType" />
+
+    <button type="submit">Calculate</button>
+</EditForm>
+
+<!-- The outputted data -->
+<h2>What You Need</h2>
+<p>Room Volume: @RoomVolume metres squared</p>
+<p>Floor Area: @FloorArea metre</p>
+<p>Paint Required: @PaintRequired litres</p>
+
+<!-- The processing code -->
+@code {
+    public decimal RoomVolume = 0;  // RoomVolume (decimal): Store the volume of the room
+    public decimal FloorArea = 0;   // FloorArea (decimal): Store the area of the floor
+    public decimal PaintRequired = 0;   // PaintRequired (decimal): Store the paint required for the room
+
+    private FormModel PaintCalculator = new();  // PaintCalculator (FormModel): Stores the form date
+
+    // HandleSubmit
+    // Returns: void
+    // Parameters: none
+    // Description: Processes the submitted data and updates the page
+    private void HandleSubmit()
+    {
+        ReturnModel ReturnData = ProcessesingService.ProcessForm(PaintCalculator);      // Send of the data and assign the returned data to the ReturnData object
+
+        // Assign the values to the created variables
+        RoomVolume = ReturnData.Volume;
+        FloorArea = ReturnData.FloorArea;
+        PaintRequired = ReturnData.PaintRequired;
+    }
+}
