@@ -21,9 +21,5 @@ namespace Paint_Calculator.Data
         [Required]
         [StringLength(10, ErrorMessage = "Height is too large.")]
         public decimal Height { get; set; }
-
-        // WidSurfaceTypeth (string): The SurfaceType of the walls
-        [Required]
-        public string SurfaceType { get; set; }
     }
 }

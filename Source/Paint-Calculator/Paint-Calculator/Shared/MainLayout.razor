@@ -3,17 +3,20 @@
 <PageTitle>Paint-Calculator</PageTitle>
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
+    <nav>
         <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <h1 class="title">Paint Calculator</h1>
         </div>
-
+    </nav>
+    
+    <main>
         <article class="content px-4">
             @Body
         </article>
     </main>
+
+    <footer>
+        <p class="flex-left">James Ashwood | <a href="https://borwell.com/software-challenge/" class="mute-link"> Borwell Software Challenge</a></p>
+        <p class="flex-right"> @DateTime.Now.ToString("d/M/yyyy")</p>
+    </footer>
 </div>

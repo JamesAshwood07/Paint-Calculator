@@ -1,12 +1,37 @@
 /* _content/Paint-Calculator/Shared/MainLayout.razor.rz.scp.css */
 .page[b-2ojg45015j] {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 100vw;
 }
 
 main[b-2ojg45015j] {
-    flex: 1;
+    width: 100vw;
+    height: 85vh;
+}
+
+footer[b-2ojg45015j] {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EBEBEB;
+    width: 100vw;
+    height: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    color: #020202;
+}
+
+.flex-left[b-2ojg45015j] {
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    padding: 12px;
+}
+
+.flex-right[b-2ojg45015j] {
+    flex: 50%;
+    display: flex;
+    justify-content: right;
+    padding: 12px;
 }
 
 .sidebar[b-2ojg45015j] {
@@ -14,12 +39,17 @@ main[b-2ojg45015j] {
 }
 
 .top-row[b-2ojg45015j] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
+    background-color: #3DCAF6;
+    justify-content: center;
+    height: 9vh;
+    width: 100vw;
     display: flex;
     align-items: center;
+}
+
+.title[b-2ojg45015j] {
+    color: white;
+    padding: 10px;
 }
 
     .top-row[b-2ojg45015j]  a, .top-row .btn-link[b-2ojg45015j] {
@@ -67,68 +97,5 @@ main[b-2ojg45015j] {
     .top-row[b-2ojg45015j], article[b-2ojg45015j] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
-    }
-}
-/* _content/Paint-Calculator/Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-4crq8pghau] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-row[b-4crq8pghau] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-4crq8pghau] {
-    font-size: 1.1rem;
-}
-
-.oi[b-4crq8pghau] {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
-.nav-item[b-4crq8pghau] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type[b-4crq8pghau] {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type[b-4crq8pghau] {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item[b-4crq8pghau]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item[b-4crq8pghau]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
-
-.nav-item[b-4crq8pghau]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler[b-4crq8pghau] {
-        display: none;
-    }
-
-    .collapse[b-4crq8pghau] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
     }
 }

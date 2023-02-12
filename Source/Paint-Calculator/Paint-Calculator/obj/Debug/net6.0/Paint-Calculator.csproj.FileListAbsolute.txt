@@ -22,7 +22,6 @@ C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-C
 C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\scopedcss\bundle\Paint-Calculator.styles.css
 C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\scopedcss\projectbundle\Paint-Calculator.bundle.scp.css
 C:\Users\James\Documents\GitHub\Paint-Calculator\Source\Paint-Calculator\Paint-Calculator\obj\Debug\net6.0\Paint-Calculator.dll

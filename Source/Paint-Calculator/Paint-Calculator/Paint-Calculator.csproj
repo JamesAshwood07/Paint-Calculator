@@ -7,6 +7,7 @@
     <RootNamespace>Paint_Calculator</RootNamespace>
     <UserSecretsId>fc3dfa01-2e7f-4aea-8b65-d06d388b4baa</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

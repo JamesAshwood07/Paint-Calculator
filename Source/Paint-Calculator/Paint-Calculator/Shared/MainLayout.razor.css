@@ -1,11 +1,36 @@
 .page {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 100vw;
 }
 
 main {
-    flex: 1;
+    width: 100vw;
+    height: 85vh;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EBEBEB;
+    width: 100vw;
+    height: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    color: #020202;
+}
+
+.flex-left {
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    padding: 12px;
+}
+
+.flex-right {
+    flex: 50%;
+    display: flex;
+    justify-content: right;
+    padding: 12px;
 }
 
 .sidebar {
@@ -13,12 +38,17 @@ main {
 }
 
 .top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
+    background-color: #3DCAF6;
+    justify-content: center;
+    height: 9vh;
+    width: 100vw;
     display: flex;
     align-items: center;
+}
+
+.title {
+    color: white;
+    padding: 10px;
 }
 
     .top-row ::deep a, .top-row .btn-link {

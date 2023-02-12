@@ -13,27 +13,40 @@
 <!-- Setting the page title -->
 <PageTitle>Paint Calculator</PageTitle>
 
-<!-- HTML Page Design -->
-<h1>Paint Calculator</h1>
 
-<h2>Your Info</h2>
+<div id="main-section">
+    <div class="mini-section">
 
-<!-- The edit form, where the user can enter the dimensions and surface type -->
-<EditForm Model="@PaintCalculator" OnSubmit="@HandleSubmit">
-    <InputNumber id="width" @bind-Value="PaintCalculator.Width" />
-    <InputNumber id="length" @bind-Value="PaintCalculator.Length" />
-    <InputNumber id="height" @bind-Value="PaintCalculator.Height" />
+        <h2>Dimensions</h2>
 
-    <InputSelect id="surfacetype" @bind-Value="PaintCalculator.SurfaceType" />
+        <!-- The edit form, where the user can enter the dimensions and surface type -->
+        <EditForm Model="@PaintCalculator" OnSubmit="@HandleSubmit">
+            <p class="label">Width (metres)</p>
+            <InputNumber class="number-input" id="width" @bind-Value="PaintCalculator.Width" />
+            <br>
+            <p class="label">Length (metres)</p>
+            <InputNumber class="number-input" id="length" @bind-Value="PaintCalculator.Length" />
+            <br>
+            <p class="label">Height (metres)</p>
+            <InputNumber class="number-input" id="height" @bind-Value="PaintCalculator.Height" />
+            <br>
 
-    <button type="submit">Calculate</button>
-</EditForm>
+            <button id="calculate-button" type="submit">Calculate</button>
+        </EditForm>
+    </div>
 
-<!-- The outputted data -->
-<h2>What You Need</h2>
-<p>Room Volume: @RoomVolume metres squared</p>
-<p>Floor Area: @FloorArea metre</p>
-<p>Paint Required: @PaintRequired litres</p>
+    
+    <div class="mini-section">
+        <h2>Instructions</h2>
+        <p>Fill in the dimensions boxes on the left with the dimensions of your room. Then click calculate.</p>
+
+        <!-- The outputted data --> 
+        <h2>What You Need</h2>
+        <p>Room Volume: @RoomVolume metres^3</p>
+        <p>Floor Area: @FloorArea metres^2</p>
+        <p>Paint Required: @PaintRequired litres</p>
+    </div>
+</div>
 
 <!-- The processing code -->
 @code {

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  paint-calculator:
+    image: paintcalculator
+    build:
+      context: .
+      dockerfile: Paint-Calculator/Dockerfile
+    ports:
+      - "8081:80"
+      - "8082:443"
